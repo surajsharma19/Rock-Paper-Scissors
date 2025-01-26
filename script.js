@@ -12,9 +12,10 @@ function getComputerChoice() {
     }
 }
 
-const computerChoice = getComputerChoice();
 
 function playRound(humanChoice) {
+    const computerChoice = getComputerChoice();
+
     if (humanChoice !== computerChoice) {
         if (humanChoice === "rock" && computerChoice === "paper" || humanChoice === "paper" && computerChoice === "scissors" || humanChoice === "scissors" && computerChoice === "rock") {
             displayResult(`You win! ${humanChoice} beats ${computerChoice}`);
